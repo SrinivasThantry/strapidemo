@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "designs",
   "info": {
-    "name": "designs"
+    "name": "designs",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,6 +13,24 @@
   "attributes": {
     "name": {
       "type": "string"
+    },
+    "builder": {
+      "model": "builders"
+    },
+    "homeSize": {
+      "type": "integer"
+    },
+    "numberofBedrooms": {
+      "type": "integer"
+    },
+    "numberofBathrooms": {
+      "type": "integer"
+    },
+    "numberofCarparks": {
+      "type": "integer"
+    },
+    "numberofLivingAreas": {
+      "type": "integer"
     }
   }
 }
