@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "builders",
+  "info": {
+    "name": "builders",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "coverImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "highlights": {
+      "type": "component",
+      "repeatable": false,
+      "component": "highlights.highlights"
+    },
+    "countofHomeDesigns": {
+      "type": "integer"
+    },
+    "countofDisplayHomes": {
+      "type": "integer"
+    },
+    "points": {
+      "type": "integer"
+    },
+    "regions": {
+      "collection": "regions"
+    }
+  }
+}
