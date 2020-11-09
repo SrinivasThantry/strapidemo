@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_floor_plans_floor_plans",
+  "info": {
+    "name": "floorPlans",
+    "icon": "file-image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "level": {
+      "type": "enumeration",
+      "enum": [
+        "groundFloor",
+        "firstFloor"
+      ]
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

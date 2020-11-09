@@ -15,7 +15,8 @@
       "type": "string"
     },
     "builder": {
-      "model": "builders"
+      "model": "builders",
+      "via": "design"
     },
     "homeSize": {
       "type": "integer"
@@ -31,6 +32,63 @@
     },
     "numberofLivingAreas": {
       "type": "integer"
+    },
+    "relatedDesigns": {
+      "collection": "designs"
+    },
+    "floorPlans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "floor-plans.floor-plans"
+    },
+    "minLotWidth": {
+      "type": "decimal"
+    },
+    "minLotDepth": {
+      "type": "decimal"
+    },
+    "numberofStoreys": {
+      "type": "integer"
+    },
+    "coverImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "brochure": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "homeFeatures": {
+      "type": "component",
+      "repeatable": false,
+      "component": "list.home-features"
+    },
+    "DisplayLocations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "location.display-locations"
+    },
+    "Price": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pricing.price"
+    },
+    "regions": {
+      "collection": "regions"
     }
   }
 }

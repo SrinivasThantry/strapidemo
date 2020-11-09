@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_pricing_offers",
+  "info": {
+    "name": "offers",
+    "icon": "tags"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "regions": {
+      "collection": "regions"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "designs": {
+      "collection": "designs"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_location_display_locations",
+  "info": {
+    "name": "DisplayLocations",
+    "icon": "map-marker",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ContactPerson": {
+      "type": "component",
+      "repeatable": false,
+      "component": "person.contact-person"
+    },
+    "region": {
+      "model": "regions"
+    },
+    "streetNumberandName": {
+      "type": "string"
+    },
+    "citySuburb": {
+      "type": "string"
+    },
+    "State": {
+      "type": "enumeration",
+      "enum": [
+        "VIC",
+        "NSW",
+        "QLD",
+        "WA",
+        "NT",
+        "SA",
+        "TAS"
+      ]
+    },
+    "googleMapLink": {
+      "type": "string"
+    },
+    "officeNumber": {
+      "type": "biginteger"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_location_addresses",
+  "info": {
+    "name": "Address",
+    "icon": "map-marker-alt"
+  },
+  "options": {},
+  "attributes": {
+    "region": {
+      "model": "regions"
+    },
+    "streetNumberandName": {
+      "type": "string"
+    },
+    "CitySuburb": {
+      "type": "string"
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "VIC",
+        "NSW",
+        "WA",
+        "NT",
+        "TAS",
+        "SA"
+      ]
+    },
+    "GoogleMapLink": {
+      "type": "string"
+    },
+    "OfficeNumber": {
+      "type": "biginteger"
+    },
+    "Email": {
+      "type": "email"
+    }
+  }
+}
