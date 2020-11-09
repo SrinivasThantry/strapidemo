@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_list_home_features",
+  "info": {
+    "name": "homeFeatures",
+    "icon": "list-ol",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Lounge": {
+      "type": "boolean"
+    },
+    "Rumpus": {
+      "type": "boolean"
+    },
+    "Study_Nook": {
+      "type": "boolean"
+    },
+    "Theater": {
+      "type": "boolean"
+    },
+    "Walk_in_Pantry": {
+      "type": "boolean"
+    },
+    "Master_at_Rear": {
+      "type": "boolean"
+    },
+    "Master_at_Front": {
+      "type": "boolean"
+    },
+    "Study": {
+      "type": "boolean"
+    }
+  }
+}

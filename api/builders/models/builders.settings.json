@@ -52,6 +52,15 @@
     },
     "regions": {
       "collection": "regions"
+    },
+    "design": {
+      "via": "builder",
+      "model": "designs"
+    },
+    "offers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pricing.offers"
     }
   }
 }

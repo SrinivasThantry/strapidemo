@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_person_contact_people",
+  "info": {
+    "name": "Contact Person",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "contactNumber": {
+      "type": "biginteger"
+    }
+  }
+}
