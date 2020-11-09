@@ -4,12 +4,12 @@ module.exports = ({ env }) => ({
     default: {
       connector: 'mongoose',
       settings: {
-        host: "${process.env.DATABASE_HOST}",
+        host: process.env['DATABASE_HOST'],
         srv: env.bool('DATABASE_SRV', true),
         port: env.int('DATABASE_PORT', 27017),
         database: env('DATABASE_NAME', 'strapi'),
-        username: "${process.env.DATABASE_USERNAME}",
-        password: "${process.env.DATABASE_PASSWORD}"
+        username: process.env['DATABASE_USERNAME'],
+        password: process.env['DATABASE_PASSWORD'],
       },
       options: {
         authenticationDatabase: env('AUTHENTICATION_DATABASE', 'admin'),
