@@ -1,18 +1,13 @@
 {
-  "collectionName": "components_floor_plans_floor_plans",
+  "collectionName": "components_list_facades",
   "info": {
-    "name": "floorPlans",
-    "icon": "file-image",
-    "description": ""
+    "name": "facades",
+    "icon": "photo-video"
   },
   "options": {},
   "attributes": {
-    "level": {
-      "type": "enumeration",
-      "enum": [
-        "Ground_Floor",
-        "First_Floor"
-      ]
+    "name": {
+      "type": "string"
     },
     "image": {
       "model": "file",

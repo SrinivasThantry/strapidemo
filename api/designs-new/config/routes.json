@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/designs",
-      "handler": "designs.find",
+      "path": "/designs-news",
+      "handler": "designs-new.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/designs/count",
-      "handler": "designs.count",
+      "path": "/designs-news/count",
+      "handler": "designs-new.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/designs/:id",
-      "handler": "designs.findOne",
+      "path": "/designs-news/:id",
+      "handler": "designs-new.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/designs",
-      "handler": "designs.create",
+      "path": "/designs-news",
+      "handler": "designs-new.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/designs/:id",
-      "handler": "designs.update",
+      "path": "/designs-news/:id",
+      "handler": "designs-new.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/designs/:id",
-      "handler": "designs.delete",
+      "path": "/designs-news/:id",
+      "handler": "designs-new.delete",
       "config": {
         "policies": []
       }
