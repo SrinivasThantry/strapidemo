@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_list_floor_plans",
+  "info": {
+    "name": "floorPlans",
+    "icon": "ruler-combined",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "homeSize": {
+      "type": "string"
+    },
+    "minLotDepth": {
+      "type": "decimal"
+    },
+    "numberofBathrooms": {
+      "type": "integer"
+    },
+    "minLotWidth": {
+      "type": "decimal"
+    },
+    "numberofCarParks": {
+      "type": "integer"
+    },
+    "numberofBedrooms": {
+      "type": "integer"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": false,
+      "component": "list.home-features"
+    },
+    "numberofLivingAreas": {
+      "type": "integer"
+    },
+    "floorPlans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "floor-plans.floor-plans"
+    },
+    "Pricing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pricing.price"
+    },
+    "Offers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pricing.offers"
+    }
+  }
+}

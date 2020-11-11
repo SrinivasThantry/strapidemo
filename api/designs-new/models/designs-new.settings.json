@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "builders",
+  "collectionName": "designs_news",
   "info": {
-    "name": "builders",
+    "name": "Collections",
     "description": ""
   },
   "options": {
@@ -14,16 +14,13 @@
     "name": {
       "type": "string"
     },
-    "logo": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
+    "numberofStoreys": {
+      "type": "integer"
+    },
+    "displayLocations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "location.display-locations"
     },
     "coverImage": {
       "model": "file",
@@ -36,32 +33,34 @@
       "plugin": "upload",
       "required": false
     },
-    "highlights": {
-      "type": "component",
-      "repeatable": false,
-      "component": "highlights.highlights"
+    "brochure": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     },
-    "countofHomeDesigns": {
-      "type": "integer"
-    },
-    "countofDisplayHomes": {
-      "type": "integer"
-    },
-    "points": {
-      "type": "integer"
-    },
-    "regions": {
-      "collection": "regions"
-    },
-    "offers": {
+    "Gallery": {
       "type": "component",
       "repeatable": true,
-      "component": "pricing.offers"
+      "component": "list.gallery"
     },
-    "facades": {
+    "virtualTours": {
       "type": "component",
       "repeatable": true,
-      "component": "list.facades"
+      "component": "list.virtual-tours"
+    },
+    "Designs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list.floor-plans"
+    },
+    "builders": {
+      "model": "builders"
     }
   }
 }
